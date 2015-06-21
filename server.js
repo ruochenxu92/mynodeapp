@@ -26,11 +26,16 @@ app.use(express.static(path.join(__dirname, '/')));
 app.use(require('./todos'));   //use own folder
 
 // start he server
-app.listen(8000, function() {
-	console.log("ready on port 8000")
+app.listen(3000, function() {
+	console.log("ready on port 3000")
 });
 
 
+// server.listen(8000,'127.0.0.1',function(){
+//  server.close(function(){
+//    server.listen(8001,'192.168.0.202')
+//  })
+// })
 
 
 
